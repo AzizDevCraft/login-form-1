@@ -17,78 +17,71 @@ body {
 }
 
 .container {
-    background: #ffffff64;
-    width: 400px;
-    height: 400px;
+    background-color: transparent;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border: solid 2px #fff;
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    width: 420px;
 }
 
-.container .titre {
-    margin-bottom: 10px;
-    font-size: 30;
-    letter-spacing: 3px;
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
     text-transform: capitalize;
-    font-weight: 600;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
-form {
+.container > input {
     width: 100%;
+    border-radius: 20px;
+    border: solid 2px #fff;
+    outline: none;
+    padding: 10px 40px 10px 15px;
+    margin: 10px;
+    background: transparent;
 }
 
-.container form > input {
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: solid 2px white;
-    margin: 10px 20px;
-    width: 90%;
-    align-items: center;
-}
-
-.check-box {
-    display: flex;
-    gap: 5px;
+.container > input::placeholder {
+    color: #fff;
 }
 
 .same-line {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 10px 15px;
 }
- .same-line a {
+
+.same-line label {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.same-line a {
     text-decoration: none;
-    font-weight: 700;
- }
+}
 
 .container button {
-    width: 80%;
+    width: 100%;
+    background: #fff;
     color: #000;
-    padding: 10px ;
-    margin: auto;
-    border-radius: 20px;
-    border: none;
     border: solid 2px transparent;
-    transition: .5s;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .container button:hover {
     color: #fff;
     background: transparent;
-    border: solid 2px #fff;
+    border: solid 2px #fff
 }
 
-.last-line {
+.container .last-line {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-.last-line a {
-    text-decoration: none;
+    gap: 10px;
 }
