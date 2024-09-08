@@ -33,7 +33,17 @@ body {
     margin-bottom: 10px;
 }
 
-.container > input {
+.input-box {
+    position: relative;
+}
+
+.input-box i {
+    position: absolute;
+    right: 10px;
+    top: 37%;
+}
+
+.container > .input-box input {
     width: 100%;
     border-radius: 20px;
     border: solid 2px #fff;
